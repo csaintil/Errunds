@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* HEADER */
+#outer-wrap {
+    background-color: #e4f1fd;
+}
+
+
+/* MAIN */
+
+.elementor-column-wrap {
+    background-color: #E4F1FD;
+}
+
+.elementor-text-editor{
+    color: #297fca;
+}
+.elementor-widget-image {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+.elementor-image {
+    text-align: center;
+    margin-left: 62%;
+   
+    
+    position: relative;
+    bottom: 162px;
+    width: 363px;
+}
+.elementor-widget-container{
+    position: relative;
+    top: 144px;
+    width: 40%;
+    /* display: flex; */
+    position: relative;
+    left: 112px;
+}
+.p1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+}
+.elementor-text-editor {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 20px;
+ font-weight: 400;
+}
+.elementor a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+.popupaoc-button {
+    padding: 10px 15px;
+    background: #e91e63;
+    color: #fff;
+    display: inline-block;
+    font-family:"Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 20px;
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
