@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #297fca;
 }
 body {
     -webkit-font-smoothing: antialiased;
@@ -12,77 +13,130 @@ body {
     word-wrap: break-word;
 }
 
-/* HEADER */
-#outer-wrap {
-    background-color: #e4f1fd;
-}
 
+/* HEADER */
+header {
+    background-color: #e4f1fd;
+    max-height: 8vh;
+}
+button{
+    background-color:red;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.nav-wrapper{
+    height: 7vh;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.logo{
+    margin:0 20px;
+}
+#navcta{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 20px;
+}
+ /*The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:rgba(228, 241, 253,.5);
+}
 
 /* MAIN */
-
-.elementor-column-wrap {
+.main{
     background-color: #E4F1FD;
-}
-
-.elementor-text-editor{
-    color: #297fca;
-}
-.elementor-widget-image {
-    text-align: center;
     display: flex;
-    align-items: center;
+    justify-content:space-between;
+}
+
+.mainimg{
+    position: relative;
+    margin: 20px 120px;
+    max-height: 90vh;
+}
+.maintext{
+    margin: 150px 120px 10px 120px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 30px;
+    max-width: 40vw;
+    padding-left: 20px;
+}
+.maintext h2{
+    font-size: 40px; 
+    letter-spacing: 4px;
+    text-align: left;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+/*REASONS*/
+.reasons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.reason{
+    flex:1;
+    margin: 25px;
+    height: 40vh;
+    padding:30px;
+    text-align: center;
+}
+.reason h3{
+    letter-spacing: 1px;
+}
+.white{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.whiteheader{
+    margin:0 auto;
+    margin-top:10vh;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
 
 }
-.elementor-image {
+
+/*SECTIONS*/
+.sections{
+    display:flex;
+    overflow-wrap: wrap;
+    justify-content: space-around;
+/*    height: 80vh;
+*/}
+.sectionimg{
+    flex:1;
+    position: relative;
+    background-color:yellow; 
     text-align: center;
-    margin-left: 62%;
-   
-    
+}
+.reduceimg{
     position: relative;
-    bottom: 162px;
-    width: 363px;
+    margin: 20px 120px;
+    max-height: 90vh;
 }
-.elementor-widget-container{
-    position: relative;
-    top: 144px;
-    width: 40%;
-    /* display: flex; */
-    position: relative;
-    left: 112px;
-}
-.p1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 63px;
-    text-align: left;
-}
-.elementor-text-editor {
- font-family: 'Times New Roman', Times, serif;
- font-size: 20px;
- font-weight: 400;
-}
-.elementor a {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none;
-}
-.popupaoc-button {
-    padding: 10px 15px;
-    background: #e91e63;
-    color: #fff;
-    display: inline-block;
-    font-family:"Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    margin-top: 20px;
-}
-a, a:hover, a:focus {
-    text-decoration: none;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.sectiontext{
+    flex:1;
+/*    margin: 300px 60px;
+*/    width: 10vw;
+    background-color:orange; 
 }
