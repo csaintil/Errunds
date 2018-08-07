@@ -102,7 +102,7 @@ button{
     letter-spacing: 1px;
 }
 .white{
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -121,22 +121,73 @@ button{
     display:flex;
     overflow-wrap: wrap;
     justify-content: space-around;
-/*    height: 80vh;
-*/}
+    height: 80vh;
+}
+.sectionimg1{
+    flex:1;
+    text-align: center;
+    background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/anxiety-less.png");
+    background-size:60%; 
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+.sectionimg2{
+    flex:1;
+/*    background-color:yellow; 
+*/    text-align: center;
+    background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/newsphone.png");
+    background-size:60%; 
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.sectionimg3{
+    flex:1;
+    text-align: center;
+    background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" );
+    background-size:60%; 
+    background-repeat: no-repeat;
+    background-position: top center;
+}
 .sectionimg{
     flex:1;
-    position: relative;
-    background-color:yellow; 
     text-align: center;
+
+
 }
 .reduceimg{
     position: relative;
     margin: 20px 120px;
-    max-height: 90vh;
+    max-height: 120vh;
+    background-color: red;
 }
 .sectiontext{
     flex:1;
-/*    margin: 300px 60px;
-*/    width: 10vw;
-    background-color:orange; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 120px 0 20px;
+/*    background-color: yellow;
+*/
+}
+.sectiontext h1{
+    font-size: 40px;
+
+}
+.sectiontext p{
+    font-size: 18px; 
+
+}
+.spacer{
+    flex:1;
+
+}
+.spacer2{
+    flex:1;
+/*    background-color: lightblue;
+*/    text-align: justify;
+
+}
+.lastspacer{
+    display: flex;
 }
