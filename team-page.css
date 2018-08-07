@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.black-logo {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    
+    position: relative;
+    /* left: 2%; */
+    top: 20px;
+}
+.mission-statement-container {
+     background-image: url(city-community-crossing-109919.jpg);
+     background-size: cover;
+     height: 100vh;
+}
+.transparent {
+    background: #ffffff36;
+    height: 100vh;
+}
+.statement-innerText {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+}
+.statement-text {
+    height: 100%;
+}
+.p1 {
+    font-size: 23px;
+    font-weight: 600px;
+    line-height: 41px;
+}
+.p2{
+    font-size: 69px;
+}
+
+
+/* -----------------------------------------------------STORY------------------------------------------------------ */
