@@ -117,17 +117,28 @@ button{
 }
 
 /*SECTIONS*/
+.wrapper{
+    margin: 0 150px;
+/*    background-color: yellow;
+*/}
 .sections{
     display:flex;
     overflow-wrap: wrap;
     justify-content: space-around;
     height: 80vh;
 }
+.sections4{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 30vh;
+    margin:10px 150px;
+}
 .sectionimg1{
     flex:1;
     text-align: center;
     background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/anxiety-less.png");
-    background-size:60%; 
+    background-size:80%; 
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -137,7 +148,7 @@ button{
 /*    background-color:yellow; 
 */    text-align: center;
     background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/newsphone.png");
-    background-size:60%; 
+    background-size:80%; 
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -145,29 +156,42 @@ button{
     flex:1;
     text-align: center;
     background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" );
-    background-size:60%; 
+    background-size:80%; 
     background-repeat: no-repeat;
     background-position: top center;
 }
+.sectionimg4{
+    flex:1;
+    text-align: center;
+    background-image: url("https://errundsonline.com/wp-content/uploads/elementor/thumbs/Mockup-Generated-by-Dunnnk-6lwz8d53fcxmnic9w8wztnmoves7s7mgqxr4frhexk4.jpg");
+    background-size:73%; 
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin:0 -23px;
+/*    background-color: yellow;
+*/}
 .sectionimg{
     flex:1;
     text-align: center;
 
-
-}
-.reduceimg{
-    position: relative;
-    margin: 20px 120px;
-    max-height: 120vh;
-    background-color: red;
 }
 .sectiontext{
     flex:1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 120px 0 20px;
+    margin: 0px 20px;
 /*    background-color: yellow;
+*/
+}
+.sectiontext2{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+/*    margin: 0px 20px;
+*/    
+/*background-color: purple;
 */
 }
 .sectiontext h1{
@@ -178,16 +202,56 @@ button{
     font-size: 18px; 
 
 }
+.sectionfour{    
+    display: flex;
+/*    background-color:green;
+*/    margin:0 120px;
+    justify-content: space-around;
+
+}
 .spacer{
     flex:1;
 
 }
 .spacer2{
     flex:1;
-/*    background-color: lightblue;
-*/    text-align: justify;
+    text-align: justify;
 
 }
-.lastspacer{
+
+
+footer{
+    background-color: #e4f1fd;
+    height: 8vh;
     display: flex;
+}
+
+footer .logo{
+    margin-top: 5px;
+}
+footer .vertical{
+    border-bottom: 1px dotted black;
+
+}
+.flex-contain{
+    flex:2;
+/*   background-color: green;
+*/}
+.vertical{
+    flex-wrap: wrap;
+    border-bottom: 1px dashed black;
+    width:100%;
+/*    background-color: yellow;
+*/    height: 3vh;
+}
+.links{
+
+}
+.footerlogo{
+/*    background-color:orange;
+*/    flex:1;
+}
+.logo{
+/*    background-color: lightpink;
+*/
 }
