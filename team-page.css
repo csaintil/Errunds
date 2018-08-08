@@ -43,10 +43,14 @@ body {
 .p2 {
   font-size: 69px;
 }
-.fa-linkedin {
-    font-size: 16px;
+.fa-linkedin, .fa-envelope {
+    font-size: 33px;
+    color: #1784BD;
+    
 }
-
+.fa-envelope {
+    color:#E9554A;
+}
 /* -----------------------------------------------------Team------------------------------------------------------ */
 .blackwhite-waves {
   text-align: center;
@@ -73,7 +77,7 @@ body {
 .profile-container {
     text-align: center;
     border-radius: 8px;
-     height: 346px;
+     height: 355px;
 }
 .tanvir-info-container {
     width: 16%;
