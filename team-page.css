@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .black-logo {
   height: auto;
@@ -61,6 +62,7 @@ body {
 .waves {
   background: url("waves.jpg");
   background-size: cover;
+  
   /* -webkit-clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%);
 clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
 }
@@ -86,29 +88,23 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
 .profile-container {
   text-align: center;
   border-radius: 8px;
-  /* height: 410px; */
   background: black;
   color: white;
 }
 .tanvir-info-container {
-  width: 16%;
-  /* background: yellow; */
+  width: 20%;
   font-family: "Roboto", sans-serif;
-  /* position: relative;
-  left: 100px; */
+  
 }
 
 .mynu-info-container {
-  width: 16%;
-  /* background: green; */
+  width: 20%;
   font-family: "Roboto", sans-serif;
 }
 .david-info-container {
-  width: 16%;
-  /* background: blue; */
+  width: 20%;
   font-family: "Roboto", sans-serif;
-  /* position: relative;
-  right: 100px; */
+  
 }
 .profile-description {
   font-size: 13px;
@@ -122,18 +118,20 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
 }
 
 .ashley-info-container {
-  width: 16%;
-  /* background: green; */
+  width: 20%;
   font-family: "Roboto", sans-serif;
-  /* position: relative;
-  left: 100px;*/
+ 
 } 
 .glen-info-container {
-  width: 16%;
-  /* background: green; */
+  width: 20%;
   font-family: "Roboto", sans-serif;
-  /* position: relative;
-  right: 100px; */
+
+}
+.advisor-container{
+  margin-top: 71px;
+}
+.developer {
+  margin-top: 71px;
 }
 /* ------------------------------------Quote------------------------------ */
 .quote-container {
@@ -250,15 +248,20 @@ a {
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 600px) {
 .team-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-evenly; */
     align-content: space-around;
 }
+.profile-container {
+  width: 71%;
+  margin-bottom: 80px;
+}
+.meetTheTeam-innerText{
+  font-size: 41px;
 }
 
-
+}
