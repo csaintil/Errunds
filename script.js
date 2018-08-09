@@ -23,3 +23,15 @@ function callbackFunc() {
  
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
+
+$(document).ready(function(){
+  console.log("loaded")
+$(window).resize(function(){
+  
+        if(window.innerWidth < 500) {
+            $("cuny-startUp-img").removeClass("cuny-startUp-img");
+
+        }
+});
+});
+

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .black-logo {
   height: auto;
@@ -28,198 +29,239 @@ body {
 }
 .statement-innerText {
   text-align: center;
-  position: relative;
-  top: 30%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .statement-text {
   height: 100%;
 }
-.p1 {
+.inner-text1 {
   font-size: 23px;
   font-weight: 600px;
   line-height: 41px;
 }
-.p2 {
+
+.inner-text2 {
   font-size: 69px;
 }
-.fa-linkedin, .fa-envelope {
-    font-size: 33px;
-    color: #1784BD;
-    
+.fa-linkedin,
+.fa-envelope {
+  font-size: 33px;
+  color: #1784bd;
 }
 .fa-envelope {
-    color:#E9554A;
+  color: #e9554a;
 }
 /* -----------------------------------------------------Team------------------------------------------------------ */
 .blackwhite-waves {
   text-align: center;
 }
+.waves {
+  background: url("waves.jpg");
+  background-size: cover;
+  
+  /* -webkit-clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%);
+clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
+}
 .meetTheTeam-innerText {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 69px;
-    height: 150px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 69px;
+  height: 150px;
 }
 
 .team-info {
   display: flex;
   justify-content: space-evenly;
-  height: 414px;
+  /* height: 414px; */
 }
 .profile-pic {
   width: 100px;
   border-radius: 50%;
   position: relative;
-    top: -46px;
+  top: -46px;
 }
 
 .profile-container {
-    text-align: center;
-    border-radius: 8px;
-     height: 355px;
+  text-align: center;
+  border-radius: 8px;
+  background: black;
+  color: white;
 }
 .tanvir-info-container {
-    width: 16%;
-    background: yellow;
-    font-family: 'Roboto', sans-serif; 
-    position: relative;
-    left: 100px;
-
+  width: 20%;
+  font-family: "Roboto", sans-serif;
+  
 }
 
 .mynu-info-container {
-    width: 16%;
-    background: green;
-    font-family: 'Roboto', sans-serif;
-   
-
+  width: 20%;
+  font-family: "Roboto", sans-serif;
 }
 .david-info-container {
-    width: 16%;
-    background: blue;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    right: 100px;
-
+  width: 20%;
+  font-family: "Roboto", sans-serif;
+  
 }
 .profile-description {
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 26px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
 }
 .profile-title {
-    font-size: 15px;
-    line-height: 41px;
+  font-size: 15px;
+  line-height: 41px;
+  color: blue;
 }
 
 .ashley-info-container {
-    width: 16%;
-    background: green;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    left: 100px;
+  width: 20%;
+  font-family: "Roboto", sans-serif;
+ 
+} 
+.glen-info-container {
+  width: 20%;
+  font-family: "Roboto", sans-serif;
 
 }
-.glen-info-container {
-    width: 16%;
-    background: green;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    right: 100px;
-
+.advisor-container{
+  margin-top: 71px;
+}
+.developer {
+  margin-top: 71px;
 }
 /* ------------------------------------Quote------------------------------ */
 .quote-container {
-    text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quote-text-container {
+  width: 57%;
 }
 .quote-text {
-    text-align: center;
-     font-family: 'Roboto', sans-serif;
-     font-size: 36px;
-     font-weight: 400;
-     line-height: 47px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
 }
-.elementor-divider{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+.elementor-divider {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
 }
 .elementor-divider-separator {
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-top-color: #b7b7b7;
-    width: 75%;
-    display: inline-flex
-
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #b7b7b7;
+  width: 75%;
+  display: inline-flex;
 }
 .homeBody-ceo-name {
-    text-align: center;
-     font-family: 'Roboto', sans-serif;
-     font-size: 26px;
-     font-weight: 400;
-     line-height: 47px;
-     margin: 20px 0 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 47px;
+  margin: 20px 0 20px;
 }
-.homeBody-title{
-    font-family: 'Roboto', sans-serif;
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 25px;
-    color:#545454;
+.homeBody-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #545454;
 }
-.elementor-divider2{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.elementor-divider2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .elementor-divider-separator2 {
-    border-top-style: solid;
-    border-top-width: 1px;
-    width: 100%;
-    display: inline-flex;
-
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 100%;
+  display: inline-flex;
 }
 
 .location-container {
-    display: flex;
+  display: flex;
 }
 
 .brief-description {
-    width: 50%;
-    padding-left: 4%;
-    padding-right: 3%;
-    font-family: 'Roboto', sans-serif;
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 25px;
-    color:#545454;
-    font-style: normal;
-
+  width: 50%;
+  padding-left: 4%;
+  padding-right: 3%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #545454;
+  font-style: normal;
 }
 .map-location {
-    width: 224%;
-    /* overflow: auto; */
-    height: 95%;
+  width: 224%;
+  /* overflow: auto; */
+  height: 95%;
 }
 .brief-description-innerText {
-    padding-top:10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .special-message {
-    font-family: 'Roboto', sans-serif;
-    font-size: 29px;
-    font-weight: 400;
-    line-height: 52px;
-   color:#3fa2f7;
-   font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #3fa2f7;
+  font-style: normal;
 }
 
-.join-button{
-    padding: 10px 15px;
-    background:red;
-    color: #fff;
-    display: inline-block;
+.join-button {
+  padding: 10px 15px;
+  background: rgb(71, 58, 58);
+  color: #fff;
+  display: inline-block;
 }
 a {
-    text-decoration:none;
+  text-decoration: none;
+}
+
+.special-color {
+    color: #46A6DF;
+}
+/* ----------------------------------Responsive------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .inner-text1 {
+    font-size: 19px;
+  }
+  .inner-text2 {
+    font-size: 40px;
+  }
+  .cuny-startUp-img {
+    left: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.team-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.profile-container {
+  width: 71%;
+  margin-bottom: 80px;
+}
+.meetTheTeam-innerText{
+  font-size: 41px;
+}
+
 }
