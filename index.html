@@ -25,8 +25,8 @@
                     <img class="logo" width="200" height="50" src="https://errundsonline.com/wp-content/uploads/2018/06/ERRUNDS-LOGO-v2-e1530383133258.png"
                         class="custom-logo" alt="ERRUNDS" itemprop="logo" />
                     </a>
-
-                    <a><button id="navcta"> Request Early Access</button></a>
+                        <!-- Trigger/Open The Modal -->
+                    <a><button class="myBtn navcta"> Request Early Access</button></a>
 
             </nav><!-- #logo -->
 
@@ -48,7 +48,7 @@
             
             <p> Errunds is a community marketplace connecting busy people to local brick and mortar businesses for a better shopping experience.&nbsp; </p>
             
-            <button> Request Early Access</button>
+            <button class="myBtn"> Request Early Access</button>
 
         </div>
 
@@ -237,7 +237,7 @@
                 
                 <p>Sign Up for Errunds and Find a Better Way to Experience what your Neighborhood has to Offer.</p>
                 
-                <button id="cta2">Request Early Access</button>
+                <button class="cta2 myBtn">Request Early Access</button>
             </div>
             
 
@@ -258,7 +258,7 @@
             
             <div class="links">
 
-                <a href="http://errundsonline.com">Shoppers</a>
+                <a href="index.html">Shoppers</a>
 
                 <a href="bus.html">Businesses</a>
 
@@ -280,6 +280,48 @@
             </div>
     </footer>
 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+        <span class="close">&times;</span>
+      <div class="container">
+        <form action="/leads_page.php" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder=" Your email..." required>
+            
+            <label for="birth">Birth Year</label>
+            <select id="year" >
+            <!-- Using Script to polulate years -->
+            </select>
+
+            <br/>
+            
+            <label for="subject">Zip Code</label>
+            <input type="text" id="zip" name="zipcode" placeholder="Zip Code">
+            
+            <div id="formsubmit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    
+    </div>
+  
+  </div>
+
+</div>
+
+  
+
     <script>
         window.onscroll = function() {myFunction()};
 
@@ -293,7 +335,46 @@
             navbar.classList.remove("sticky");
           }
         }
+
+        // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("myBtn");
+console.log(btn)
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+for(var i=0;i<btn.length;i++){
+btn[i].onclick = function() {
+    modal.style.display = "block";
+    }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// Drop Down for Birth Year
+var start = new Date().getFullYear();
+var end = 1900;
+var options = "";
+for(var year = start ; year >=end; year--){
+  options += "<option>"+ year +"</option>";
+}
+document.getElementById("year").innerHTML = options;
 </script>
+ 
 
 </body>
 
