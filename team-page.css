@@ -61,7 +61,7 @@ body {
 }
 .waves {
   background: url("waves.jpg");
-  background-size: cover;
+  background-size: 150px;
   
   /* -webkit-clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%);
 clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
@@ -88,8 +88,8 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
 .profile-container {
   text-align: center;
   border-radius: 8px;
-  background: black;
-  color: white;
+  background: #fbfbfb;
+  color: black;
 }
 .tanvir-info-container {
   width: 20%;
@@ -223,7 +223,7 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
 
 .join-button {
   padding: 10px 15px;
-  background: rgb(71, 58, 58);
+  background-color:red;
   color: #fff;
   display: inline-block;
 }
@@ -234,6 +234,76 @@ a {
 .special-color {
     color: #46A6DF;
 }
+/*Footer*/
+footer{
+  background-color: #e4f1fd;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footerlogo{
+  flex:1;
+  flex-wrap: wrap;        
+}
+footer .logo{
+  position: relative;
+  top:20px;
+}
+
+.flex-contain{
+  display: flex;
+  flex:4;
+
+
+}
+.legal{
+  flex-wrap: wrap;
+  width:100%;
+  
+}
+.links{
+  flex:4;
+  display: flex;
+  justify-content: space-around;
+}
+.links a{
+  position: relative;
+  top:40px;
+  font-size: 18px;
+  text-decoration:none;
+  font-weight: 450; 
+
+}
+.socials{
+  flex:1;
+  justify-content: center;
+  display: flex;
+}
+.socials img{
+  margin:0 5px; 
+  position: relative;
+  top:30px;
+
+}
+.copy{
+  position: relative;
+  top:20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+hr{
+  border: dotted .5px black;
+  width:80vw;
+  margin:0 auto;
+}
+#cta2{
+  margin-left: 0;
+}
+#buscta2{
+  margin:20px 0;
+}
+
 /* ----------------------------------Responsive------------------------------------- */
 
 @media screen and (max-width: 600px) {
