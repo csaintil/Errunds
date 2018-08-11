@@ -30,6 +30,7 @@ button{
     font-size: 16px;
     margin: 40px;
     margin-left: 0;
+    font-weight: 600;
 }
 .nav-wrapper{
     height: 7vh;
@@ -44,7 +45,7 @@ button{
     margin:0 20px;
 }
 .navcta{
-    
+    font-weight: 600;
     margin: 20px 20px;
 }
  /*The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -184,17 +185,11 @@ button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0px 40px;
+    margin: 0px 10px;
 
 }
-.sectiontext2{
-    flex:1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
-}
 .sectiontext h1{
-    font-size: 40px;
+    font-size: 36px;
 
 }
 .sectiontext p{
@@ -214,8 +209,10 @@ button{
 .busspacer2{
     flex:1;
     text-align: justify;
-/*    background-color: yellow;
-*/}
+
+    /*margin-bottom: 10px; 
+    background-color: yellow;*/
+}
 .busspacer2 h1{
     font-size:32px;
 }
@@ -287,7 +284,7 @@ hr{
     margin-left: 0;
 }
 .buscta2{
-    margin:20px 0;
+    margin:10px 0;
 }
 
 /* The Modal (background) */
@@ -341,13 +338,52 @@ input[type=text],input[type=tel],input[type=email], select, textarea {
     resize: vertical;
     font-size:14px;
 }
+select{
+    background-color:white; 
+    color: grey;
+}
 
-/*#year, label[for=birth]{
-    width:200px;
-    margin: 10px;
-    overflow: scroll;
+label{
+    display: block;
+
+}
+#fname, #lname{
+    width: 48%;
+   /* flex:1;*/
+
+}
+.name{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#address{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+}
+#city,#state{
+    flex:3;
+    margin:2px;
+   
+}
+
+#states{
+    flex:1;
+    margin:2px;
+}
+#zip{
+    flex:2;
+     margin:2px;
+}
+/*#year{
+    width: 48%;
+}
+#birthdiv{
+    text-align: center;
+    margin:0; 
 }*/
-
 input[type=submit] {
 
     background-color:red;
@@ -357,6 +393,7 @@ input[type=submit] {
     padding: 5px;
     text-decoration: none;
     font-size: 16px;
+    margin:5px;
    
 }
 #formsubmit{
