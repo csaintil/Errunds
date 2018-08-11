@@ -26,7 +26,7 @@
 				<img width="200" height="50" src="https://errundsonline.com/wp-content/uploads/2018/06/ERRUNDS-LOGO-v2-e1530383133258.png" class="custom-logo" alt="ERRUNDS" itemprop="logo" />
 				</a>
 
-			 <a><button id="navcta"> Request Early Access</button></a>
+			 <a><button class="navcta myBtn"> Request Early Access</button></a>
 			 	
             </nav><!-- #logo -->
 
@@ -55,7 +55,7 @@
 			<p>Errunds is a community marketplace connecting local brick and mortar businesses to shoppers to empower businesses and help them scale.</p>
 		
 
-			<button> Request Early Access</button>
+			<button lass="myBtn"> Request Early Access</button>
 
 		</div>
 
@@ -75,7 +75,7 @@
 		<div class="reason">
 			<!-- image -->
 				<div>
-					<img width="33" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/money-cycle.png" alt="" />
+					<img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/money-cycle.png" alt="" />
 
 				</div>
 			
@@ -244,7 +244,7 @@
 				
 				<p>Fill up the form below for a free consultation.</p>
 				
-				<button id="buscta2">Request Early Access</button>	
+				<button class="myBtn buscta2">Request Early Access</button>	
 			</div>
 		</div>
 		
@@ -283,6 +283,45 @@
                  <hr> <p class="copy">&#169 2018 Errunds Inc. All rights reserved</p>
             </div>
     </footer>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+        <span class="close">&times;</span>
+      <div class="container">
+        <form action="/leads_page.php" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder=" Your email..." required>
+            
+           	<label for="bname">Business Name</label>
+            <input type="text" id="bus-name" name="email" placeholder=" Business name..." required>
+            
+			<label for="email">Business Phone</label>
+            <input type="tel" id="bus-phone" name="phone" placeholder="(xxx)-xxx-xxxx" required>
+            
+            <br/>
+            
+            <label for="subject">Address</label>
+            <input type="text" id="address" name="zipcode" placeholder="Address">
+            
+            <div id="formsubmit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    
+    </div>
+  
+  </div>
+
+</div>
+
 
     <script>
         window.onscroll = function() {myFunction()};
@@ -297,6 +336,44 @@
             navbar.classList.remove("sticky");
           }
         }
+
+                // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("myBtn");
+console.log(btn)
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+for(var i=0;i<btn.length;i++){
+btn[i].onclick = function() {
+    modal.style.display = "block";
+    }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// Drop Down for Birth Year
+var start = new Date().getFullYear();
+var end = 1900;
+var options = "";
+for(var year = start ; year >=end; year--){
+  options += "<option>"+ year +"</option>";
+}
+document.getElementById("year").innerHTML = options;
 </script>
 
 </body>
