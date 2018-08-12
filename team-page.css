@@ -59,18 +59,25 @@ body {
 .blackwhite-waves {
   text-align: center;
 }
+.main-bcg {
+  background-color: #000000;
+}
 .waves {
-  background: url("waves.jpg");
-  background-size: 150px;
-  
-  /* -webkit-clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%);
-clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
+  background-image: url(white\ wave.png);
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-size: 99%;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 .meetTheTeam-innerText {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 69px;
   height: 150px;
+  color: ghostwhite;
+
 }
 
 .team-info {
@@ -84,12 +91,17 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
   position: relative;
   top: -46px;
 }
+.founder {
+  width: 140px;
+}
 
 .profile-container {
+
   text-align: center;
-  border-radius: 8px;
-  background: #fbfbfb;
-  color: black;
+    border-radius: 8px;
+    background: #000000cf;      
+    color:ghostwhite;
+    border: 1px solid white;
 }
 .tanvir-info-container {
   width: 20%;
@@ -114,7 +126,8 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
 .profile-title {
   font-size: 15px;
   line-height: 41px;
-  color: blue;
+  color: #46A6DF;
+  /* color: #ffffff; */
 }
 
 .ashley-info-container {
@@ -217,7 +230,8 @@ clip-path: polygon(0 16%, 53% 35%, 100% 50%, 100% 100%, 0% 100%); */
   font-size: 29px;
   font-weight: 400;
   line-height: 52px;
-  color: #3fa2f7;
+  /* color: #3fa2f7; */
+  color: #000000;
   font-style: normal;
 }
 
