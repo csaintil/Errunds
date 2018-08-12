@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="shop_leads.php">
+
     <title>ERRUNDS</title>
     
     <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>    
@@ -41,22 +42,24 @@
             
             <div class="mainheader">
             
-                <h2> A Better Experience in Running your Errands.</h2>
+                <h2 id="sect-title"> A Better Experience in Running your Errands.</h2>
 
             </div>
+            <br class="hidden"/>
             
-            <br/>
+            <div class="maindesc">
             
-            <p> Errunds is a community marketplace connecting busy people to local brick and mortar businesses for a better shopping experience.&nbsp; </p>
+                <p> Errunds is a community marketplace connecting busy people to local brick and mortar businesses for a better shopping experience.&nbsp; </p>
             
-            <button class="myBtn"> Request Early Access</button>
-
+            </div>
+            <div class="maindesc main-btn">
+                <button class="myBtn"> Request Early Access</button>
+            </div>
         </div>
 
          <div class="imgdiv">
             
-            <img class="mainimg" src="https://errundsonline.com/wp-content/uploads/2018/07/iphone-errunds-e1533334771166.png" title="iphone errunds" 
-                alt="iphone errunds"/> 
+            <img class="mainimg" src="https://errundsonline.com/wp-content/uploads/2018/07/iphone-errunds-e1533334771166.png"/> 
 
         </div>
     
@@ -65,8 +68,8 @@
     <div class="white">
            
         <div class="whiteheader">
-            <p>Here&#8217;s a few of the reasons why shoppers choose Errunds,
-            <br/> and why you should too.</p>
+            <h2>Here&#8217;s a few of the reasons why shoppers choose Errunds,
+            <br/> and why you should too.</h2>
         </div>
 
     <!-- Reasons row -->
@@ -75,35 +78,35 @@
         <!-- First reason -->
         <div class="reason">
             <!-- image -->
-            <div>
-                <img width="33" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/small-phone.png"
+            <div class="reason-flex">
+                <img class="reason-img"width="40" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/small-phone.png"
                     alt="" />
             </div>
 
             <!-- title -->
-            <div>
+            <div class="reason-flex" id="reason-title">
                 <h3> Convenience </h3>
             </div>
 
             <!-- text -->                
-            <div> <p>Avoid pesky lines, searching for items, minimum surcharge payments to use your card, and the general overthinking with product quality/ price. </p></div>
+            <div class="reason-flex"> <p>Avoid pesky lines, searching for items, minimum surcharge payments to use your card, and the general overthinking with product quality/ price. </p></div>
         
         </div>
         
         <!-- Second reason -->
         <div class="reason">
             <!-- image -->
-                <div>
-                    <img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/pinn-map.png" alt="" />                                  
+                <div class="reason-flex" >
+                    <img class="reason-img" width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/pinn-map.png" alt="" />                                  
                 </div>
             
             <!-- title -->
-                <div>
+                <div class="reason-flex">
                     <h3> Awareness</h3>
                 </div>
             
             <!-- text -->
-                <div> 
+                <div class="reason-flex"> 
                     <p>Know Your community. Every Nook and Cranny. </p> 
                 </div>
             
@@ -113,19 +116,19 @@
 
         <div class="reason">
             <!-- image -->
-                <div>
-                    <img width="50" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/likes.png" alt="" />                                
+                <div class="reason-flex" >
+                    <img class="reason-img" width="50" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/likes.png" alt="" />                                
                 </div>
             
             <!-- title -->
-                <div>
-                    <div> 
+                
+                    <div class="reason-flex"> 
                         <h3>Rewards</h3>
                     </div>
-                </div>
+                
        
             <!-- text -->
-        <div>
+        <div class="reason-flex">
             <p>Get rewarded every time you shop at a brick and mortar business. Yeah, you read that right.</p>
         </div>
         </div>    
@@ -136,14 +139,15 @@
     <div class="wrapper">
     
         <!-- Section1 -->
-        <div class="sections">
+        <div class="sections section1">
             
             <!-- Image -->
-            <div class="sectionimg1">
+            <div class=" phones sectionimg1">
                <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/anxiety-less.png" title="anxiety less" alt="anxiety less" />  -->
             </div>
             
             <!-- Text -->
+            <hr class="hidden">
             <div class="sectiontext"> 
             
                 <div class="spacer"> 
@@ -166,7 +170,8 @@
     </div> <!-- Sections -->
 
     <!-- Section2 -->
-    <div class="sections">
+    <div class="sections section2">
+        <hr class="hidden">
 
         <div class="sectiontext">
             
@@ -186,15 +191,16 @@
         
         </div>
 
-        <div class="sectionimg2">
+        <div class=" phones sectionimg2">
           <!--   <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/newsphone.png" title="newsphone" alt="newsphone" />  --> 
         </div>
 
     </div>  <!-- Sections -->
 
     <!-- Section3 -->
-    <div class="sections">
-        <div class="sectionimg3">
+    <div class="sections section3">         <hr class="hidden">
+
+        <div class="phones sectionimg3">
            <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" title="points dash" alt="points dash"> -->
 
         </div>
@@ -224,13 +230,13 @@
 
 
     <!-- Section4 -->
-    <div class="sections4">
+    <div class="sections4 mobile-sect4">
         <div class="sectionimg4">
            <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" title="points dash" alt="points dash"> -->
 
         </div>
 
-        <div class="sectiontext">
+        <div class="sectiontext sectiontext4">
             
             <div class="spacer2">
                 <h1>Join in!</h1>

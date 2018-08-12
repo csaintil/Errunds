@@ -22,7 +22,7 @@ $mailTo = "jennifer@myerrunds.com";
 $headers = "New Shopper Signed Up: " .$mailfrom;
 $txt = "You have received an e-mail from ".$fname.".\n\n".;
 
-mail($mailTo, $fname, $lname, $mailfrom,$year)
-header("Location: index.html?mailsend")
+mail($mailTo, $fname, $lname, $mailfrom,$year);
+header("Location: index.html?mailsend");
 }
 ?>

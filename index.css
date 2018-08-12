@@ -13,7 +13,6 @@ body {
     word-wrap: break-word;
 }
 
-
 /* HEADER */
 header {
     background-color: #e4f1fd;
@@ -32,22 +31,7 @@ button{
     margin-left: 0;
     font-weight: 600;
 }
-.nav-wrapper{
-    height: 7vh;
-}
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
 
-}
-.logo{
-    margin:0 20px;
-}
-.navcta{
-    font-weight: 600;
-    margin: 20px 20px;
-}
  /*The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -55,7 +39,23 @@ button{
   width: 100%;
   background-color:rgba(228, 241, 253,.5);
 }
-
+.nav-wrapper{
+    height: 7vh;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    max-height: 8vh;
+}
+.logo{
+    margin:0 20px;
+}
+.navcta{
+    
+    margin: 20px 20px;
+}
 /* MAIN */
 .main{
     background-color: #E4F1FD;
@@ -89,31 +89,40 @@ button{
 /*REASONS*/
 .reasons{
     display: flex;
-    flex-wrap: wrap;
+    flex:1;/*
+    flex-wrap: wrap;*/
     justify-content: space-around;
     text-align: center;
     width: 90vw;
-    margin:0 auto;
+    margin:20px auto;
 }
 .reason{
     flex:1;
-    height: 400px;
+    height: 200px;
     margin: 40px;
     text-align: center;
     line-height: 25px;
 
 }
 .white{
-    height: 500px;
+/*    height: 500px;*/
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
 }
 .whiteheader{
+    flex:1;
     margin:0 auto;
-    margin-top:100px;
+    margin-top: 120px;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+
+
+}
+.whiteheader h2{
+    font-size: 40px;
     line-height: 60px;
 
 }
@@ -186,6 +195,7 @@ button{
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0px 10px;
+  /*  height:50px;*/
 
 }
 .sectiontext h1{
@@ -404,4 +414,7 @@ input[type=submit] {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+.hidden{
+    display: none;
 }
