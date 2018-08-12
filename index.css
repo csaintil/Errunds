@@ -13,7 +13,6 @@ body {
     word-wrap: break-word;
 }
 
-
 /* HEADER */
 header {
     background-color: #e4f1fd;
@@ -30,15 +29,25 @@ button{
     font-size: 16px;
     margin: 40px;
     margin-left: 0;
+    font-weight: 600;
+}
+
+ /*The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:rgba(228, 241, 253,.5);
 }
 .nav-wrapper{
     height: 7vh;
+    
 }
 #navbar{
     display: flex;
     justify-content: space-between;
     z-index: 1;
-
+    max-height: 8vh;
 }
 .logo{
     margin:0 20px;
@@ -47,14 +56,6 @@ button{
     
     margin: 20px 20px;
 }
- /*The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color:rgba(228, 241, 253,.5);
-}
-
 /* MAIN */
 .main{
     background-color: #E4F1FD;
@@ -88,31 +89,40 @@ button{
 /*REASONS*/
 .reasons{
     display: flex;
-    flex-wrap: wrap;
+    flex:1;/*
+    flex-wrap: wrap;*/
     justify-content: space-around;
     text-align: center;
     width: 90vw;
-    margin:0 auto;
+    margin:20px auto;
 }
 .reason{
     flex:1;
-    height: 400px;
+    height: 200px;
     margin: 40px;
     text-align: center;
     line-height: 25px;
 
 }
 .white{
-    height: 500px;
+/*    height: 500px;*/
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+
 }
 .whiteheader{
+    flex:1;
     margin:0 auto;
-    margin-top:100px;
+    margin-top: 120px;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+
+
+}
+.whiteheader h2{
+    font-size: 40px;
     line-height: 60px;
 
 }
@@ -184,17 +194,12 @@ button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0px 40px;
+    margin: 0px 10px;
+  /*  height:50px;*/
 
 }
-.sectiontext2{
-    flex:1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
-}
 .sectiontext h1{
-    font-size: 40px;
+    font-size: 36px;
 
 }
 .sectiontext p{
@@ -214,8 +219,10 @@ button{
 .busspacer2{
     flex:1;
     text-align: justify;
-/*    background-color: yellow;
-*/}
+
+    /*margin-bottom: 10px; 
+    background-color: yellow;*/
+}
 .busspacer2 h1{
     font-size:32px;
 }
@@ -286,8 +293,8 @@ hr{
 .cta2{
     margin-left: 0;
 }
-#buscta2{
-    margin:20px 0;
+.buscta2{
+    margin:10px 0;
 }
 
 /* The Modal (background) */
@@ -301,13 +308,13 @@ hr{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin:12vh auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 40%; /* Could be more or less, depending on screen size */
@@ -330,7 +337,7 @@ hr{
 }
 
 
-input[type=text], select, textarea {
+input[type=text],input[type=tel],input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -341,12 +348,52 @@ input[type=text], select, textarea {
     resize: vertical;
     font-size:14px;
 }
-
-#year, label[for=birth]{
-    width:200px;
-    margin: 10px;
+select{
+    background-color:white; 
+    color: grey;
 }
 
+label{
+    display: block;
+
+}
+#fname, #lname{
+    width: 48%;
+   /* flex:1;*/
+
+}
+.name{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#address{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+}
+#city,#state{
+    flex:3;
+    margin:2px;
+   
+}
+
+#states{
+    flex:1;
+    margin:2px;
+}
+#zip{
+    flex:2;
+     margin:2px;
+}
+/*#year{
+    width: 48%;
+}
+#birthdiv{
+    text-align: center;
+    margin:0; 
+}*/
 input[type=submit] {
 
     background-color:red;
@@ -356,6 +403,7 @@ input[type=submit] {
     padding: 5px;
     text-decoration: none;
     font-size: 16px;
+    margin:5px;
    
 }
 #formsubmit{
@@ -366,4 +414,7 @@ input[type=submit] {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+.hidden{
+    display: none;
 }

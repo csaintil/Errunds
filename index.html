@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>ERRUNDS</title>
     
     <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>    
@@ -40,22 +42,24 @@
             
             <div class="mainheader">
             
-                <h2> A Better Experience in Running your Errands.</h2>
+                <h2 id="sect-title"> A Better Experience in Running your Errands.</h2>
 
             </div>
+            <br class="hidden"/>
             
-            <br/>
+            <div class="maindesc">
             
-            <p> Errunds is a community marketplace connecting busy people to local brick and mortar businesses for a better shopping experience.&nbsp; </p>
+                <p> Errunds is a community marketplace connecting busy people to local brick and mortar businesses for a better shopping experience.&nbsp; </p>
             
-            <button class="myBtn"> Request Early Access</button>
-
+            </div>
+            <div class="maindesc main-btn">
+                <button class="myBtn"> Request Early Access</button>
+            </div>
         </div>
 
          <div class="imgdiv">
             
-            <img class="mainimg" src="https://errundsonline.com/wp-content/uploads/2018/07/iphone-errunds-e1533334771166.png" title="iphone errunds" 
-                alt="iphone errunds"/> 
+            <img class="mainimg" src="https://errundsonline.com/wp-content/uploads/2018/07/iphone-errunds-e1533334771166.png"/> 
 
         </div>
     
@@ -64,8 +68,8 @@
     <div class="white">
            
         <div class="whiteheader">
-            <p>Here&#8217;s a few of the reasons why shoppers choose Errunds,
-            <br/> and why you should too.</p>
+            <h2>Here&#8217;s a few of the reasons why shoppers choose Errunds,
+            <br/> and why you should too.</h2>
         </div>
 
     <!-- Reasons row -->
@@ -74,35 +78,35 @@
         <!-- First reason -->
         <div class="reason">
             <!-- image -->
-            <div>
-                <img width="33" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/small-phone.png"
+            <div class="reason-flex">
+                <img class="reason-img"width="40" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/small-phone.png"
                     alt="" />
             </div>
 
             <!-- title -->
-            <div>
+            <div class="reason-flex" id="reason-title">
                 <h3> Convenience </h3>
             </div>
 
             <!-- text -->                
-            <div> <p>Avoid pesky lines, searching for items, minimum surcharge payments to use your card, and the general overthinking with product quality/ price. </p></div>
+            <div class="reason-flex"> <p>Avoid pesky lines, searching for items, minimum surcharge payments to use your card, and the general overthinking with product quality/ price. </p></div>
         
         </div>
         
         <!-- Second reason -->
         <div class="reason">
             <!-- image -->
-                <div>
-                    <img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/pinn-map.png" alt="" />                                  
+                <div class="reason-flex" >
+                    <img class="reason-img" width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/pinn-map.png" alt="" />                                  
                 </div>
             
             <!-- title -->
-                <div>
+                <div class="reason-flex">
                     <h3> Awareness</h3>
                 </div>
             
             <!-- text -->
-                <div> 
+                <div class="reason-flex"> 
                     <p>Know Your community. Every Nook and Cranny. </p> 
                 </div>
             
@@ -112,19 +116,19 @@
 
         <div class="reason">
             <!-- image -->
-                <div>
-                    <img width="50" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/likes.png" alt="" />                                
+                <div class="reason-flex" >
+                    <img class="reason-img" width="50" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/likes.png" alt="" />                                
                 </div>
             
             <!-- title -->
-                <div>
-                    <div> 
+                
+                    <div class="reason-flex"> 
                         <h3>Rewards</h3>
                     </div>
-                </div>
+                
        
             <!-- text -->
-        <div>
+        <div class="reason-flex">
             <p>Get rewarded every time you shop at a brick and mortar business. Yeah, you read that right.</p>
         </div>
         </div>    
@@ -135,14 +139,15 @@
     <div class="wrapper">
     
         <!-- Section1 -->
-        <div class="sections">
+        <div class="sections section1">
             
             <!-- Image -->
-            <div class="sectionimg1">
+            <div class=" phones sectionimg1">
                <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/anxiety-less.png" title="anxiety less" alt="anxiety less" />  -->
             </div>
             
             <!-- Text -->
+            <hr class="hidden">
             <div class="sectiontext"> 
             
                 <div class="spacer"> 
@@ -165,7 +170,8 @@
     </div> <!-- Sections -->
 
     <!-- Section2 -->
-    <div class="sections">
+    <div class="sections section2">
+        <hr class="hidden">
 
         <div class="sectiontext">
             
@@ -185,15 +191,16 @@
         
         </div>
 
-        <div class="sectionimg2">
+        <div class=" phones sectionimg2">
           <!--   <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/newsphone.png" title="newsphone" alt="newsphone" />  --> 
         </div>
 
     </div>  <!-- Sections -->
 
     <!-- Section3 -->
-    <div class="sections">
-        <div class="sectionimg3">
+    <div class="sections section3">         <hr class="hidden">
+
+        <div class="phones sectionimg3">
            <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" title="points dash" alt="points dash"> -->
 
         </div>
@@ -223,13 +230,13 @@
 
 
     <!-- Section4 -->
-    <div class="sections4">
+    <div class="sections4 mobile-sect4">
         <div class="sectionimg4">
            <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" title="points dash" alt="points dash"> -->
 
         </div>
 
-        <div class="sectiontext">
+        <div class="sectiontext sectiontext4">
             
             <div class="spacer2">
                 <h1>Join in!</h1>
@@ -262,15 +269,14 @@
 
                 <a href="bus.html">Businesses</a>
 
-                <a href="http://errundsonline.com/team">Our Team</a>
+                <a href="team-page.html">Our Team</a>
             </div>
 
             <div class="socials">
                 <a href="#" target="_blank"> <img  width="32" height="32"src="images/fb.png"></a>
                 
-                <a href="" target="_blank"> <img width="32" height="32" src="images/instagram.png"></a>
+                <a href="#" target="_blank"> <img width="32" height="32" src="images/instagram.png"></a>
             </div>
-            
             
         </div>
     
@@ -289,25 +295,32 @@
   <div class="modal-content">
         <span class="close">&times;</span>
       <div class="container">
-        <form action="/leads_page.php" method="post">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <form action="shop_leads.php" method="POST">
+           <!--  <form name="contactform" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>  --> 
+    
+            <label for="fname"> Name </label>
+            <div class="name">
+                
+                <input type="text" id="fname" name="firstname" placeholder="First name" required>
+                
+                <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+             </div>
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder=" Your email..." required>
+            <input type="text" id="email" name="email" placeholder=" Your email" required>
             
-            <label for="birth">Birth Year</label>
+          
+            <label id="birth" for="birth" placeholder=" "> Birth Year</label>
+            
+            <div id="birthdiv">
             <select id="year" >
             <!-- Using Script to polulate years -->
             </select>
-
-            <br/>
+            </div>
+           
             
             <label for="subject">Zip Code</label>
-            <input type="text" id="zip" name="zipcode" placeholder="Zip Code">
+            <input type="text" id="zip" name="zipcode" placeholder="Zip code">
             
             <div id="formsubmit">
                 <input type="submit" value="Submit">
@@ -358,7 +371,7 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the modal, close it. [optional]
 // window.onclick = function(event) {
 //     if (event.target == modal) {
 //         modal.style.display = "none";

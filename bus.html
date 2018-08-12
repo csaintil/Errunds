@@ -26,7 +26,7 @@
 				<img width="200" height="50" src="https://errundsonline.com/wp-content/uploads/2018/06/ERRUNDS-LOGO-v2-e1530383133258.png" class="custom-logo" alt="ERRUNDS" itemprop="logo" />
 				</a>
 
-			 <a><button id="navcta"> Request Early Access</button></a>
+			 <a><button class="navcta myBtn"> Request Early Access</button></a>
 			 	
             </nav><!-- #logo -->
 
@@ -55,7 +55,7 @@
 			<p>Errunds is a community marketplace connecting local brick and mortar businesses to shoppers to empower businesses and help them scale.</p>
 		
 
-			<button> Request Early Access</button>
+			<button lass="myBtn"> Request Early Access</button>
 
 		</div>
 
@@ -75,7 +75,7 @@
 		<div class="reason">
 			<!-- image -->
 				<div>
-					<img width="33" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/money-cycle.png" alt="" />
+					<img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/money-cycle.png" alt="" />
 
 				</div>
 			
@@ -209,9 +209,9 @@
             <div class="spacer2">
 				<h1>Keep them coming back.</h1>
 				<br/>
-				<p>Create repeat customers. Reach out to customers who bought products to make sure you can find out ways to provide better experiences and keep them happy every time they walk through your doors.</p>
+			<!-- 	<p>Create repeat customers. Reach out to customers who bought products to make sure you can find out ways to provide better experiences and keep them happy every time they walk through your doors.</p>
 				<br/>
-				
+				 -->
 				<p>Let the customer experience go past the doors.</p>
 			</div>
 
@@ -244,11 +244,14 @@
 				
 				<p>Fill up the form below for a free consultation.</p>
 				
-				<button id="buscta2">Request Early Access</button>	
+				<button class="myBtn buscta2">Request Early Access
+				</button>	
 			</div>
+
 		</div>
 		
     </div>
+
 </div>  <!--sectionwrapper  -->
 
 <footer>
@@ -262,17 +265,17 @@
             
             <div class="links">
 
-                <a href="http://errundsonline.com">Shoppers</a>
+                <a href="index.html">Shoppers</a>
 
                 <a href="bus.html">Businesses</a>
 
-                <a href="http://errundsonline.com/team">Our Team</a>
+                <a href="team-page.html">Our Team</a>
             </div>
 
             <div class="socials">
                 <a href="#" target="_blank"> <img  width="32" height="32"src="images/fb.png"></a>
                 
-                <a href="" target="_blank"> <img width="32" height="32" src="images/instagram.png"></a>
+                <a href="#" target="_blank"> <img width="32" height="32" src="images/instagram.png"></a>
             </div>
             
             
@@ -283,6 +286,115 @@
                  <hr> <p class="copy">&#169 2018 Errunds Inc. All rights reserved</p>
             </div>
     </footer>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+        <span class="close">&times;</span>
+      <div class="container">
+        <form action="bus_leads.php" method="post">
+            
+            <label for="fname">Name</label>
+            <div class="name">
+
+	            <input type="text" id="fname" name="firstname" placeholder="First name" required>
+	            
+	            <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+			</div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder=" Your email" required>
+            
+           	<label for="bname">Business Name</label>
+            <input type="text" id="bus-name" name="email" placeholder=" Business name" required>
+            
+			<label for="email">Business Phone</label>
+            <input type="tel" id="bus-phone" name="phone" placeholder="(xxx)-xxx-xxxx" required>
+            
+            <br/>
+            
+            
+            
+    <label for="subject">Address</label>
+
+			
+  			<input type="text" id="street" name="street" placeholder="Address"required>
+
+            <div id="address">
+			
+  			<input type="text" id="city" name="city" placeholder="City"required>
+            
+            	<select id="states">
+
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AR">AR</option>	
+					<option value="AZ">AZ</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DC">DC</option>
+					<option value="DE">DE</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="IA">IA</option>	
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="MA">MA</option>
+					<option value="MD">MD</option>
+					<option value="ME">ME</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MO">MO</option>	
+					<option value="MS">MS</option>
+					<option value="MT">MT</option>
+					<option value="NC">NC</option>	
+					<option value="NE">NE</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>			
+					<option value="NV">NV</option>
+					<option value="NY">NY</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WI">WI</option>	
+					<option value="WV">WV</option>
+					<option value="WY">WY</option>
+
+			</select>	
+			
+            <input type="text" id="zip" name="zipcode" placeholder="Zip">
+			</div>
+
+            <div id="formsubmit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    
+    </div>
+  
+  </div>
+
+</div>
+
 
     <script>
         window.onscroll = function() {myFunction()};
@@ -297,6 +409,44 @@
             navbar.classList.remove("sticky");
           }
         }
+
+                // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("myBtn");
+console.log(btn)
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+for(var i=0;i<btn.length;i++){
+btn[i].onclick = function() {
+    modal.style.display = "block";
+    }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// Drop Down for Birth Year
+var start = new Date().getFullYear();
+var end = 1900;
+var options = "";
+for(var year = start ; year >=end; year--){
+  options += "<option>"+ year +"</option>";
+}
+document.getElementById("year").innerHTML = options;
 </script>
 
 </body>
