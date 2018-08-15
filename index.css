@@ -30,6 +30,7 @@ button{
     margin: 40px;
     margin-left: 0;
     font-weight: 600;
+    border-radius: 10%: 
 }
 
  /*The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -285,8 +286,8 @@ footer .logo{
     text-align: center;
 }
 
-hr{
-    border: dotted .5px black;
+.footer-line{
+    border: dotted .5px grey;
     width:80vw;
     margin:0 auto;
 }

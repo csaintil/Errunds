@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="mobile.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">	
 	<title>Businesses &#8211; ERRUNDS</title>
 	
@@ -38,11 +39,11 @@
 
 	<div class="main">
 		
-		<div class="imgdiv">
-			<img class="mainimg" src="https://errundsonline.com/wp-content/uploads/2018/07/anitas-cafe.png"/>
+		<div id="busimgdiv" class="imgdiv">
+			<img id="busmainimg" class="mainimg" src="https://errundsonline.com/wp-content/uploads/2018/07/anitas-cafe.png"/>
 		</div>
 		
-		<div class="maintext">
+		<div id="bus-maintext" class="maintext">
             
             <div class="mainheader">
 
@@ -50,85 +51,92 @@
 			
 			</div>
 			
-			<br/>
+			<br class="hidden"/>
 
+			<div class="maindesc">
 			<p>Errunds is a community marketplace connecting local brick and mortar businesses to shoppers to empower businesses and help them scale.</p>
 		
-
-			<button lass="myBtn"> Request Early Access</button>
-
+			</div>
+			<div class="maindesc main-btn">
+			<button class="myBtn"> Request Early Access</button>
 		</div>
+	</div>
 
 	</div> <!-- End of Main Div -->
 
 	<div class="white">
 
-        <div class="whiteheader">
-			<p>See just a few of the reasons why many Businesses 
-			<br /> are choosing to partner with Errunds.</p>
+        <div id="bus-whiteheader" class="whiteheader">
+			<h2>See just a few of the reasons why many Businesses 
+			<br /> are choosing to partner with Errunds.</h2>
 		</div>
 
 	<!-- Reasons row -->
-	<div class="reasons">
+	 
+	<div class="bus-reasons">
 	
 		<!-- First reason -->
-		<div class="reason">
+<hr class="hidden shortline">
+		<div class="bus-reason">
+
 			<!-- image -->
-				<div>
+				<div class="reason-flex">
 					<img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/money-cycle.png" alt="" />
 
 				</div>
 			
 			<!-- title -->
-				<div>
+				<div class="reason-flex" id="reason-title">
 					<h3> 24/7 Accessibility </h3>
 				</div>
 			
 			<!-- text -->
-			<div> <p> Keep your doors open longer (even when they’re closed). </p> </div>
+			<div class="reason-flex"> <p> Keep your doors open longer (even when they’re closed). </p> </div>
 		
 		</div>
 
 		<!-- Second reason -->
-		<div class="reason">
+		 <hr class="hidden shortline">
+		<div class="bus-reason">
 			<!-- image -->
-				<div>
+				<div class="reason-flex" >
+					
 					<img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/bulb.png" alt="" />					
 				</div>
 			
 			<!-- title -->
-				<div>
+				<div class="reason-flex">
 					<h3> Smarter Decisions</h3>
 				</div>
 			
 			<!-- text -->
-				<div> 
+				<div  class="reason-flex"> 
 					<p>Make smart decisions on inventory and operations based on real-time data. </p>
 				</div>
 			
 			</div>		
-
+			
 		<!-- Third reason -->
-
-		<div class="reason">
+		<hr class="hidden shortline">
+		
+		<div class="bus-reason">
 			<!-- image -->
 				<div>
-					<img width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/heart.png" alt="" />							
+					<img class="reason-flex" width="54" height="54" src="https://errundsonline.com/wp-content/uploads/2018/07/heart.png" alt="" />							
 				</div>
 			
 			<!-- title -->
-				<div>
-					<div> 
+				<div class="reason-flex">
+					 
 						<h3>Stronger Customer Relationships</h3>
-					</div>
+					
 				</div>
 			
 			<!-- text -->
-			<div>
+			<div class="reason-flex">
 				<p>Interact with your customers to make sure they have the best possible experience.</p>
 			</div>
 		</div>	
-
 	</div>   <!-- Reasons -->
 
 	</div> <!-- End of White -->
@@ -137,14 +145,15 @@
     <div class="wrapper">
     	
 	<!-- Section1 -->
-		<div class="sections">
+		<div class=" sections section1">
 
 			<!-- Image -->
-            <div class="sectionimg1">
+            <div class=" phones sectionimg1">
 			<!-- <img src="https://errundsonline.com/wp-content/uploads/2018/07/phone-time-pick.png" title="phone time pick" alt="phone time pick"> -->
 			</div>
 
 			<!-- Text -->
+			 <hr class="hidden">
 			<div class="sectiontext"> 
 
 			<div class="spacer"> 
@@ -167,7 +176,8 @@
     </div> <!-- Sections -->
 	
 	<!-- Section2 -->
-	<div class="sections">
+    <div class="sections section2">
+        <hr class="hidden">
 
 		<div class="sectiontext">
             
@@ -188,15 +198,16 @@
             </div> 
         
         </div>
-        <div class="sectionimg2">
+        <div class=" phones sectionimg2">
 				<!-- <img src="https://errundsonline.com/wp-content/uploads/2018/07/phone-time-pick.png" title="phone time pick" alt="phone time pick"> -->
 		</div>
 
      </div> <!-- Sections -->
 
 	<!-- Section3 -->
-	<div class="sections">
-        <div class="sectionimg3">
+    <div class="sections section3">         <hr class="hidden">
+
+        <div class="phones sectionimg3">
 			<!-- <img src="https://errundsonline.com/wp-content/uploads/2018/07/phone-time-pick.png" title="phone time pick" alt="phone time pick" /> -->
 
 		</div>
@@ -209,9 +220,9 @@
             <div class="spacer2">
 				<h1>Keep them coming back.</h1>
 				<br/>
-			<!-- 	<p>Create repeat customers. Reach out to customers who bought products to make sure you can find out ways to provide better experiences and keep them happy every time they walk through your doors.</p>
+				<p>Create repeat customers. Reach out to customers who bought products to make sure you can find out ways to provide better experiences and keep them happy every time they walk through your doors.</p>
 				<br/>
-				 -->
+				
 				<p>Let the customer experience go past the doors.</p>
 			</div>
 
@@ -223,15 +234,16 @@
 	</div>
 
 </div>  <!--sectionwrapper  -->
+<hr class="hidden">
 
 <!-- Section4 -->
-	<div class="sections4">
-		<div class="sectionimg4">
+    <div id="mbus-sect4" class="sections sections4">
+        <div id="bus-section4" class="sectionimg4">
 	           <!--  <img class="reduceimg" src="https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" title="points dash" alt="points dash"> -->
 
 	    </div>
 
-		<div class="sectiontext">
+		<div class="sectiontext sectiontext4">
 
 			<div class="busspacer2">
 				<h1>Let&#8217;s Grow your Business!</h1>
@@ -244,7 +256,7 @@
 				
 				<p>Fill up the form below for a free consultation.</p>
 				
-				<button class="myBtn buscta2">Request Early Access
+				<button class="cta2  myBtn">Request Early Access
 				</button>	
 			</div>
 
@@ -254,7 +266,7 @@
 
 </div>  <!--sectionwrapper  -->
 
-<footer>
+ <footer>
         <div class="footerlogo">
             
             <img class="logo" width="200" height="50" src="https://errundsonline.com/wp-content/uploads/2018/06/ERRUNDS-LOGO-v2-e1530383133258.png" class="attachment-large size-large" alt="" />                                            
@@ -265,35 +277,39 @@
             
             <div class="links">
 
-                <a href="index.html">Shoppers</a>
+                <div><a href="index.html">Shoppers</a></div>
 
-                <a href="bus.html">Businesses</a>
 
-                <a href="team-page.html">Our Team</a>
+                <div><a href="bus.html">Businesses</a></div>
+
+                <div><a href="team-page.html">Our Team</a></div>
             </div>
+        
+        </div>
 
             <div class="socials">
-                <a href="#" target="_blank"> <img  width="32" height="32"src="images/fb.png"></a>
-                
-                <a href="#" target="_blank"> <img width="32" height="32" src="images/instagram.png"></a>
+
+               <div> <a href="#" target="_blank"> <img  width="32" height="32"src="images/fb.png"></a></div>
+
+                <div>
+                <a href="#" target="_blank"> <img width="32" height="32" src="images/instagram.png"></a></div>
             </div>
             
-            
-        </div>
     
         <div class="legal">
         
-                 <hr> <p class="copy">&#169 2018 Errunds Inc. All rights reserved</p>
+                 <hr class="footer-line"> 
+                 <p class="copy">&#169 2018 Errunds Inc. All rights reserved</p>
             </div>
     </footer>
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div class="bus-modal-content">
         <span class="close">&times;</span>
       <div class="container">
-        <form action="bus_leads.php" method="post">
+        <form action="bus_leads.php" method="POST">
             
             <label for="fname">Name</label>
             <div class="name">
