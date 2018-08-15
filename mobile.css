@@ -8,29 +8,40 @@
         color: #297fca;
 
     }
+    
 
     /* HEADER */
     header {
         background-color: #e4f1fd;
         width: 100vw;
         height: 8vh;
+        overflow-x: hidden;
     }
     body{
         overflow-x: hidden;
+        margin-bottom: 0px;
+        width: 100vw;
+      
+
     }
     #navbar{
         display: flex;
         justify-content: space-between;
         z-index: 1;
+        height: 9vh;
     }
+    
     .logo{
         margin: 5px;
         width: 150px;
         height: 35px;
     }
+    #navlogo{
+        margin-top: 10px;
+    }
     .navcta{
         font-weight: 800;
-        margin: 5px 5px;
+        margin: 5px 6px;
         font-size: 12px;
     }
     button{
@@ -62,46 +73,75 @@
         justify-content:space-between;
         margin:0;
         width: 100vw;
+
     }
 
     #sect-title{
         align-self: center;
         width: 100vw;
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
         font-weight: 800;
         margin:10px;
+        padding: 0 5px;
     }
     .imgdiv{
         flex:1;
-        height: 75vh;
+        height: 90vh;
         margin:0 auto;
-        padding-bottom: 10px;
-               display: flex;
+        padding-bottom: 20px;
+        display: flex;
        width: 88vw; 
 
+    }
+    #busimgdiv{
+         flex:1;
+        height: 90vh;
+        margin:0 auto;
+        padding-bottom: 20px;
+        display: flex;
+       width: 88vw; 
+       order:2;
     }
     .mainimg{
         margin:0px;
     }
-
+    
     .maintext{
         display: flex;
         flex:1;
         flex-direction: column;
         justify-content: center;
         margin: 0px;
-        height: 90vh;
+        height: 93vh;
         min-width: 100vw;
         max-width: 100vw;
 /*        background-color: yellow;*/
         padding: 0px;
+
+    }
+    #bus-maintext{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        height: 93vh;
+        min-width: 100vw;
+        max-width: 100vw;
+/*        background-color: yellow;*/
+        padding: 0px;
+        text-align: center;
+    }
+    #bus-maintext h2{
+        text-align: center;
     }
     .mainheader, .maindesc {
         display: flex;
         flex:1;
         width: 100vw;
         justify-content: center;
+        
 
     }
     .mainheader{
@@ -137,13 +177,27 @@
         flex:1;
         font-weight: 600;
         text-align: center;
-        margin:50px 0;
+        margin:50px 0 10px 0;
 
     }
+    #bus-whiteheader{
+        margin-bottom: 5px;
+    }
+
     .whiteheader > h2{
-        font-size: 20px;
+        font-size: 25px;
         width: 100vw;
         text-align: center;
+        margin: 2px;
+
+    }
+     #bus-whiteheader > h2{
+        font-size: 28px;
+
+        width: 100vw;
+        text-align: center;
+        padding: 0px 4px; 
+        
 
     }
 
@@ -161,6 +215,17 @@
         
 
     }
+    .bus-reasons{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+        margin:5px 0;
+        
+
+    }
+
     .reason{
         display: flex;
         flex:1;
@@ -171,17 +236,34 @@
         text-align: center;
         margin: 2px;
         padding:0px;
+        height:150px;
       /*  border-bottom: 1px solid grey;*/
 
 
     }
-    .reason-flex{
+
+    .bus-reason{
+        display: flex;
         flex:1;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 0px;
+        text-align: center;
+        margin: 2px;
+        padding:2px;
+        height:120px;
+        
+
+    }
+    .reason-flex{
+      /*  flex:1;*/
         align-self: center;
 
     }
     .reason-flex > p{
-        margin:20px;
+        margin:12px;
+        
     }
     #reason-title{
         flex:1;
@@ -200,10 +282,11 @@
         flex-direction: column;
         justify-content: space-around;
         width: 100vw;
-        height: 80vh;
+        height: 93vh;
         padding-bottom: 60px;
       
     }
+
     .section1{
         display: flex;
         
@@ -214,7 +297,7 @@
         flex:1;
         text-align: center;
         background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/anxiety-less.png");
-        background-size:70%; 
+        background-size:80%; 
         background-repeat: no-repeat;
         background-position: top center;
         width: 100vw;
@@ -230,7 +313,7 @@
         flex:1;
         text-align: center;
         background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/newsphone.png");
-        background-size:70%; 
+        background-size:80%; 
         background-repeat: no-repeat;
         background-position: top center;
         min-width: 340px;
@@ -247,39 +330,54 @@
         flex:1;
         text-align: center;
         background-image: url("https://errundsonline.com/wp-content/uploads/2018/07/points-dash.png" );
-        background-size:70%; 
+        background-size:80%; 
         background-repeat: no-repeat;
         background-position: top center;
         min-width: 340px;
         order:2;
     }
-    .sections4{
+    #mobile-sect4{
         display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0;
+        max-height: 40vh;
+        min-height: 40vh;
+        padding-bottom: 0px;
         
+    }
+    #mbus-sect4{
+        display:flex;
         flex-direction: column;
         justify-content: space-around;
-        margin:0px;
-        background-color: red;
+        margin:20px 0;
+        max-height: 40vh;
+        min-height: 40vh;
+        padding:0;
+        
+        
     }
     .sectionimg4{
         flex:1;
-        text-align: center;
         background-image: url("https://errundsonline.com/wp-content/uploads/elementor/thumbs/Mockup-Generated-by-Dunnnk-6lwz8d53fcxmnic9w8wztnmoves7s7mgqxr4frhexk4.jpg");
-        background-size:70%; 
+        background-size:50%; 
         background-repeat: no-repeat;
         background-position: top center;
-        width: 300vw;
         order:1;
+        margin: 20px 0;
 
     }
-    .sectiontext{
-        display: flex;
-        flex:1;
-        flex-direction: column;
+    #bus-section4{
+        margin:0px 0;
+    }
+    .sectiontext4{
+        flex:2;
         margin: 0px;
-       /* height: 200px;*/
-
+        display: flex;
+        justify-content: space-between;
+        order: 2;
     }
+
     .sectiontext h1{
         font-size: 25px;
         margin: 0 10px;
@@ -292,10 +390,7 @@
         line-height: 20px;
 
     }
-    .sectiontext4{
-        flex:1;
-
-    }
+ 
     
     .spacer{
         flex:1;
@@ -311,7 +406,6 @@
             font-size: 10px;
         }
     .busspacer2{
-        display: flex;
         flex-direction: column;
         margin:10px 0;
         text-align: center;
@@ -325,63 +419,97 @@
     /*---------Footer----------*/
     footer{
         background-color: #e4f1fd;
-        height: 150px;
         display: flex;
-        flex-wrap: wrap;
-    }
+        flex-direction: column;
+        margin-bottom:0px;
+        display: flex;
+        height: 40vh;
+        width: 100vw;
+        overflow-x: hidden;
+   }
     .footerlogo{
         flex:1;
-        flex-wrap: wrap;        
+        order:1;
+        text-align: center;
+
     }
     footer .logo{
-        position: relative;
-        top:20px;
+        position:relative;
+        top:0px;
+        margin-top:10px;
     }
 
     .flex-contain{
         display: flex;
-        flex:4;
+        flex-direction: column;
+        flex:5;
+        order:2;
+       /* background-color: orange;*/
     }
     .legal{
+        flex:1;
         flex-wrap: wrap;
-        width:100%;
+        width:100vw;
+        order:3;
+        font-size: 10px;
+
+
         
     }
     .links{
-        flex:4;
         display: flex;
+        flex:2;
+        flex-direction: column;
         justify-content: space-around;
+        order:1;
+        text-align: center;
+        width: 100vw;
+    }
+    .links div{
+        flex:1;
+        justify-content: center;
+        font-size: 18px;
+        margin:0px;
     }
     .links a{
         position: relative;
-        top:40px;
-        font-size: 18px;
+        top:10px;
+        font-size: 16px;
         text-decoration:none;
-        font-weight: 450; 
+        font-weight: 450;   
+        text-align: center;
 
     }
     .socials{
-        flex:1;
-        justify-content: center;
+        flex:2;
         display: flex;
+        order:3;
+        text-align: center;
+        margin-top:-25px;
+        justify-content: center;
+
+      /*  background-color: yellow;*/
     }
-    .socials img{
-        margin:0 5px; 
-        position: relative;
-        top:30px;
+    .socials div{
+        align-self: center;
+        margin-top: -35px;
+        
 
     }
     .copy{
-        position: relative;
-        top:20px;
-        font-size: 16px;
+        /*flex:2;*/
+        background-color: #e4f1fd;
         text-align: center;
+        width: 100vw;
+        position: relative;
+         top: -2px;
+         color:darkgrey;
+         margin:5px;
     }
+  
+    .footer-line{
+       border:0.5px dashed rgb(220,220,220);
 
-    hr{
-        border: dotted .5px black;
-        width:80vw;
-        margin:0 auto;
     }
     .cta2{
         margin-left: 0;
@@ -389,7 +517,10 @@
     .buscta2{
         margin:10px 0;
     }
-
+    hr{
+        border:1px solid rgb(220,220,220)
+;
+    }
     /* The Modal (background) */
     .modal {
         display: none; /* Hidden by default */
@@ -407,10 +538,20 @@
     /* Modal Content/Box */
     .modal-content {
         background-color: #fefefe;
-        margin:12vh auto; /* 15% from the top and centered */
+        vertical-align: center;
+        margin:20vh auto; /* 15% from the top and centered */
         padding: 20px;
         border: 1px solid #888;
-        width: 40%; /* Could be more or less, depending on screen size */
+        width: 95vw; /* Could be more or less, depending on screen size */
+
+    }
+        .bus-modal-content {
+        background-color: #fefefe;
+        vertical-align: center;
+        margin:10vh auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 95vw; /* Could be more or less, depending on screen size */
 
     }
 
@@ -549,8 +690,12 @@
      .imgdiv{
 
     }
-    footer{
-        width:100vw;
+    .shortline{
+
+        width: 20px;
+        margin:10px auto;
+        border:1px solid rgb(220,220,220);
     }
+    
 
     }
